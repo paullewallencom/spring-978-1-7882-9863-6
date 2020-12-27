@@ -1,0 +1,21 @@
+info:
+  name: ${spring.application.name}
+  description: The best bookmark application out there
+
+spring:
+  application:
+    name: yummy
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+  http:
+    encoding:
+      force: true
+  resources:
+    cache-period: 3000
+  jpa:
+    hibernate:
+      ddl-auto: none
+
